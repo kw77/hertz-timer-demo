@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Hertz Info</title>
+    <script src="/static/js/superagent.min.js"></script>
+    <script src="/static/js/sparkline.js"></script>
+    <script src="/static/js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<h1>Hertz Info</h1>
+
+<div id="infobox"></div>
+<div id="chartbox"></div>
+
+<form id="optionsForm" name="optionsForm">
+  <div>
+    <label for="maxHertz">maxHertz:</label>
+    <input type="number" min="0" step="1" id="maxHertz" name="maxHertz">
+  </div>
+  <div>
+    <label for="minHertz">minHertz:</label>
+    <input type="number" min="0" step="1" id="minHertz" name="minHertz">
+  </div>
+  <div>
+    <label for="hertzVariation">hertzVariation:</label>
+    <input type="number" min="0" step="1" id="hertzVariation" name="hertzVariation">
+  </div>
+  <div>
+    <label for="variationEvery">variationEvery:</label>
+    <input type="number" min="0" step="1" id="variationEvery" name="variationEvery">
+  </div>
+  <div>
+    <label for="stopTime">stopTime:</label>
+    <input type="number" min="0" step="1" id="stopTime" name="stopTime">
+  </div>
+</form>
+
+<button id="start" onclick="post('start')">Start</button>
+<button id="stop"  onclick="post('stop') ">Stop</button>
+<button onclick="sendOptions()">Update</button>
+
+</body>
+</html>

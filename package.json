@@ -1,0 +1,27 @@
+{
+  "name": "hertz-timer-demo",
+  "version": "1.0.0",
+  "description": "An example of using the hertz-timer library with a web interface (SPA) for viewing status and changing configuration parameters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kw77/hertz-timer-demo.git"
+  },
+  "keywords": [
+    "hertz",
+    "test"
+  ],
+  "author": "KW",
+  "license": "CC-BY",
+  "homepage": "https://github.com/kw77/hertz-timer-demo",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "hertz-timer": "^1.0.1",
+    "serve-static": "^1.12.0"
+  },
+  "devDependencies": {}
+}

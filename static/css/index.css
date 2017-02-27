@@ -1,0 +1,16 @@
+body {
+    font-family: arial;
+}
+label {
+    display: inline-block;
+    width:110;
+}
+#infobox {
+    height:18px;
+}
+#chartbox {
+    height:100px;
+    width:325px;
+    border:1px solid #333333;
+    margin-bottom:5px;
+}
